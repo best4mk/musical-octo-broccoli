@@ -1,0 +1,13 @@
+.img-fluid {
+    background-image: url("../../assets/one.jpeg");
+    height: calc(100vh - 60px);
+    background-size: cover;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }

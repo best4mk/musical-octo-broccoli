@@ -1,6 +1,6 @@
 .navbar {
     padding: 0 20px;
-    background-color: aquamarine;
+    background-color: rgb(113, 99, 202);
 }
 
 .navbar-brand img {
@@ -10,3 +10,11 @@
 #navbarNavAltMarkup{
     justify-content: center;
 } 
+
+.nav-link{
+    margin: 0 5px;
+
+    &.active {
+        border-bottom: 1px solid black;
+    }
+}
