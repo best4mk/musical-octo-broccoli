@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Water+Brush&display=swap');
+
 .img-fluid {
     background-image: url("../../assets/one.jpeg");
     height: calc(100vh - 60px);
@@ -6,8 +8,32 @@
 
 .centered {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px rgba(33, 119, 18, 0.5);
   }
+
+  #mytitle{
+    text-align: center;
+    text-shadow: 4px 4px 5px rgb(36, 123, 79);
+    font-family: Verdana, Geneva, Tahoma;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+    
+    
+  }
+  .text-center{
+    font-size: xx-large;
+    font-family:'Water Brush', cursive;
+    font-size: 8vw;
+  }
+
+  /*position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;*/
+ 
