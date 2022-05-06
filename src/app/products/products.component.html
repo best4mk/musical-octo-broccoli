@@ -1,1 +1,11 @@
 <p>products works!</p>
+
+<a *ngFor="let category of productCategories$ | async">
+    {{ category.name }}
+</a>
+
+<!-- <div class="product-cart cart" *ngFor="let product of products$ | async">
+
+    <img src="product.filename" alt="">
+    <p> {{ product.title }} </p>
+</div> -->
