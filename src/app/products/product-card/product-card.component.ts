@@ -8,6 +8,6 @@ import { Product } from 'src/app/types';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent  {
-  @Input () public product!:Product;
-  stars: number[] = [1, 2, 3, 4, 5];
+  @Input () public product!: Product;
+  public stars: number[] = [1, 2, 3, 4, 5];
 }
