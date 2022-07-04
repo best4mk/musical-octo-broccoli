@@ -10,20 +10,14 @@ import { ProductsService } from './services/products.service';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-
-  public productCategories$!: Observable<ProductCategory[]>;
+  public productCategories$: Observable<ProductCategory[]>;
   products$!: Observable<Product[]>;
-  
 
-   constructor(private readonly productsService: ProductsService) { }
-
-  public ngOnInit(): void {
+  constructor(private readonly productsService: ProductsService) {
     this.productCategories$ = this.productsService.getProductCategories();
-    this.products$ = this.productsService.getProducts();
-
-   }
-        // initialize get products
   }
 
-
-
+  public ngOnInit(): void {
+    this.products$ = this.productsService.getProducts();
+  }
+}

@@ -1,23 +1,5 @@
-<span class = "container" *ngFor="let category of productCategories$ | async">
-    {{ category.name }}
-</span> 
+<app-product-categories [categories]="productCategories$ | async"></app-product-categories>
 
 <div class="card-deck">
-<div class="card m-1  col-3" *ngFor="let product of products$ | async">      
-    
-    <h5 class="card-title"> {{ product.title }} </h5>
-    <div class="product-photo"><img class="img-fluid" width="250" height="200" src="http://localhost:3000{{ product.filename}}" alt="" class="rounded"  ></div>
-    <div class="card-text">
-        <div class="truncate-text"> {{product.description}} </div>
-    </div>
-    
-    <h6>Rating {{product.rating}}</h6>
-    <h6> Price {{product.price}}</h6> 
-    <button type="button" class="btn btn-block btn-outline-primary mt-auto">Add to card</button>
-            
-     
-    
-
-
-</div>
+  <app-product-card *ngFor="let product of products$ | async" [product]="product" class="card m-1 col-3">  </app-product-card>
 </div>

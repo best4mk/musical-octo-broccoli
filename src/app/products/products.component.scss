@@ -1,8 +1,3 @@
-.container{
-    margin-top: 110px !important;
-    
-    
-}
 
 .card-deck {
     display: flex;
@@ -14,75 +9,5 @@
     text-align: center;
      
 }
-
-
-
-.product-photo img {
-    width: 100%;
-    height: 250px; 
-    object-fit: cover; 
-}
-
-
-.card-text {
-  padding: 1rem;
-}
-
-.truncate-text {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    line-height: 1.3em;
-    height: 3.9em;
-  }
-
-
-
-
-/*bootstrap cdn link for Css
-
-.container{
-    margin-top: 110px !important;
-}
-
-.card{
-    border: none;
-    outline: none;
-    background-color:#fff;
-    border-radius: 20px;
-    transition: transform .3s;
-}
-
-.card:hover{
-transform: translateY(-15px);
-transition: transform .3s;
-}
-
-.text1{
-    font-size: 13px;
-    color: #cbcbcb;
-}
-
-.info{
-    line-height: 17px;
-}
-
-.start{
-    color: #fbc02d;
-}
-
-/*card1,2,3
-.cost span{
-    color: #fb3531;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.cursor{
-    cursor: pointer;
-    border-bottom-left-radius:20px ;
-    border-bottom-right-radius: 20px;
-}*/
 
 

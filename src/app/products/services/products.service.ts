@@ -8,10 +8,8 @@ import { Product, ProductCategory } from 'src/app/types';
   providedIn: 'root'
 })
 export class ProductsService {
-  [x: string]: any;
   private baseUrl: string = 'api/products';
  
-  
   constructor(private readonly httpClient: HttpClient) { }
 
   public getProductCategories(): Observable<ProductCategory[]> {
