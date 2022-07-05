@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AppComponent,
     HeaderComponent,
+
   ],
   imports: [
     HttpClientModule,

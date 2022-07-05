@@ -1,0 +1,9 @@
+<ul
+          class="list-inline rating-list"
+          *ngFor="let star of stars"
+          style="display: inline-block"
+        >
+          <li [ngClass]="{ selected: star <= product.rating }">
+            <i class="fa fa-star"></i>
+          </li>
+        </ul>

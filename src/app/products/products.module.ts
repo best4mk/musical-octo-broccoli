@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsService } from './services/products.service';
 import { ProductCategoriesComponent } from './product-categories/product-categories.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { ProductCardRatingComponent } from './product-card-rating/product-card-rating.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,8 @@ const routes: Routes = [
   declarations: [
     ProductsComponent,
     ProductCategoriesComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ProductCardRatingComponent
   ],
   imports: [
     CommonModule,
