@@ -1,9 +1,8 @@
 <ul
-          class="list-inline rating-list"
-          *ngFor="let star of stars"
-          style="display: inline-block"
-        >
-          <li [ngClass]="{ selected: star <= product.rating }">
-            <i class="fa fa-star"></i>
-          </li>
-        </ul>
+  class="list-inline rating-list"
+  *ngFor="let star of stars">
+    <li [ngClass]="{ selected:isStartLessOrEqualToRating(star)}">
+    <i class="fa fa-star"></i>
+    </li>
+</ul>
+<h6>Rating {{ product.rating }}</h6>

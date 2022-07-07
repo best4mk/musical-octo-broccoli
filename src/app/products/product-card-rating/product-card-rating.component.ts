@@ -9,6 +9,6 @@ import { Product } from 'src/app/types';
 export class ProductCardRatingComponent {
   @Input () public product!: Product;
   public stars: number[] = [1, 2, 3, 4, 5];
-
-
+  public isStartLessOrEqualToRating(_star: number): boolean { 
+     return _star <= this.product.rating; }
 }
