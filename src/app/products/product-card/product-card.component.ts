@@ -9,5 +9,4 @@ import { Product } from 'src/app/types';
 })
 export class ProductCardComponent  {
   @Input () public product!: Product;
-  public stars: number[] = [1, 2, 3, 4, 5];
 }
