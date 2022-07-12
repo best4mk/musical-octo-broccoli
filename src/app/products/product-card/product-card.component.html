@@ -1,37 +1,23 @@
-
-    <h5 class="card-title">{{ product.title }}</h5>
-    <div class="product-photo">
-      <img
-        class="img-fluid"
-        width="250"
-        height="200"
-        src="http://localhost:3000{{ product.filename }}"
-        alt=""
-        class="rounded"
-      />
-    </div>
-    <div class="card-text">
-      <div class="truncate-text">{{ product.description }}</div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-12">
-        <ul
-          class="list-inline rating-list"
-          *ngFor="let star of stars"
-          style="display: inline-block"
-        >
-          <li [ngClass]="{ selected: star <= product.rating }">
-            <i class="fa fa-star"></i>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <h6>Rating {{ product.rating }}</h6>
-
-    <h6>Price {{ product.price }}</h6>
-    <button type="button" class="btn btn-block btn-outline-primary mt-auto">
-      Add to card
-    </button>
+<h5 class="card-title">{{ product.title }}</h5>
+  <div class="product-photo">
+  <img
+    class="img-fluid"
+    width="250"
+    height="200"
+    src="http://localhost:3000{{ product.filename }}"
+    alt=""
+    class="rounded"
+  />
+  </div>
+  <div class="card-text">
+  <div class="truncate-text">{{ product.description }}</div>
+  </div>
+  <div class="row">
+    <app-product-card-rating [star]="star" class="col-sm-12"></app-product-card-rating>
+  </div>
   
+  <h6>Price {{ product.price }}</h6>
+  <button type="button" class="btn btn-block btn-outline-primary mt-auto">
+    Add to card
+  </button>
+    
