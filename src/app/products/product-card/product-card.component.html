@@ -13,9 +13,8 @@
   <div class="truncate-text">{{ product.description }}</div>
   </div>
   <div class="row">
-    <app-product-card-rating [star]="star" class="col-sm-12"></app-product-card-rating>
+    <app-product-card-rating [productRating]="product.rating" class="col-sm-12"></app-product-card-rating>
   </div>
-  
   <h6>Price {{ product.price }}</h6>
   <button type="button" class="btn btn-block btn-outline-primary mt-auto">
     Add to card

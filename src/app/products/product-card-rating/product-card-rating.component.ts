@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Product } from 'src/app/types';
 
 @Component({
   selector: 'app-product-card-rating',
@@ -7,8 +6,9 @@ import { Product } from 'src/app/types';
   styleUrls: ['./product-card-rating.component.scss']
 })
 export class ProductCardRatingComponent {
-  @Input () public product!: Product;
+  @Input () public productRating!: number;
   public stars: number[] = [1, 2, 3, 4, 5];
-  public isStartLessOrEqualToRating(_star: number): boolean { 
-     return _star <= this.product.rating; }
+  public isStartLessOrEqualToRating(star: number): boolean { 
+    return star <= this.productRating;
+  }
 }
